@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GifTastic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linking Bootstrap 4 and local CSS files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+   
+    <!-- Linking Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="sport-buttons" class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" data-name="Baseball" class="sport-button btn-primary btn-secondary">Baseball</button>
+                <button type="button" data-name="Football" class="sport-button btn-primary btn-secondary">Football</button>
+                <button type="button" data-name="Basketball" class="sport-button btn-primary btn-secondary">Basketball</button>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+    <div class="row">
+        
+        <div id="gifs" class="col-lg-9">
+        </div>
+        <div class="col-lg-3">
+                <div class="input-group">
+                    <input type="text" id="sport-addition" class="form-control" placeholder="Name a Sport!" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn-rounded btn-primary btn-outline-secondary" id="submit" type="button">Submit</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- Linking to local javascript file -->
+    <script src="assets/giftastic.js"></script>
+</body>
+</html>
